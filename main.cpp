@@ -57,7 +57,7 @@ int getGroup(const vector<set<int>>& partitions, int state) {
 void minimizeDFA(const DFA& dfa) {
     vector<set<int>> partitions;
 
-    // Step 1: Separate final and non-final
+    
     set<int> final = dfa.finalStates;
     set<int> nonFinal;
     for (int i = 0; i < dfa.numStates; ++i) {
